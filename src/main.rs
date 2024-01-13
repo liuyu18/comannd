@@ -1,3 +1,8 @@
+use clap::App;
 fn main() {
-    println!("Hello, world!");
+  let _matches = clap::App::new("echo")
+      .version("0.1.0")
+      .author("ryan")
+      .about("Rust")
+      .get_matches();
 }
